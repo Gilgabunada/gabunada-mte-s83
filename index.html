@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATELIER PETAL — Bespoke Botanical Studio</title>
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons Outlined -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  NAVBAR -->
+    <header class="sticky-top atelier-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand font-serif font-weight-bold text-terracotta" href="#hero">ATELIER PETAL</a>
+                
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <!-- Center Navigation Links -->
+                    <ul class="navbar-nav mx-auto nav-links-custom">
+                        <li class="nav-item active mx-2">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#shop">Bouquets</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#collections">Lookbook</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">Studio</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Utility Actions -->
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#shop" title="Search">
+                                <span class="material-icons-outlined">search</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#shop" id="cart-btn" title="Basket">
+                                <span class="material-icons-outlined">local_mall</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#newsletter" title="Sign In">
+                                <span class="material-icons-outlined">person_outline</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SPLIT EDITORIAL HERO SECTION -->
+        <section id="hero" class="hero-split py-5">
+            <div class="container py-lg-4">
+                <div class="row align-items-center">
+                    <!-- Left Copy Column -->
+                    <div class="col-lg-6 pr-lg-5 mb-5 mb-lg-0">
+                        <span class="d-inline-block text-uppercase tracking-widest text-sage font-weight-bold small mb-3">
+                            Autumn / Winter Harvest
+                        </span>
+                        <h1 class="font-serif display-3 font-weight-bold text-charcoal mb-4 leading-tight">
+                            Poetry Told Through <span class="font-italic text-terracotta">Wild Stems</span>
+                        </h1>
+                        <p class="lead font-weight-light text-muted mb-5">
+                            Every arrangement is hand-tied to order using locally grown heirloom blooms, dried grasses, and organic foliage.
+                        </p>
+                        <div class="d-flex flex-wrap align-items-center">
+                            <a href="#shop" class="btn btn-terracotta px-4 py-3 text-uppercase tracking-widest mr-3 mb-2">
+                                Explore Bouquets
+                            </a>
+                            <a href="#collections" class="btn btn-outline-charcoal px-4 py-3 text-uppercase tracking-widest mb-2">
+                                Seasonal Gallery
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Arched Image Column -->
+                    <div class="col-lg-6">
+                        <div class="hero-arch-frame mx-auto shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1507290439931-a861b5a38200?auto=format&fit=crop&w=1000&q=80" alt="Artisan Floral Arrangement" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAROUSEL SECTION -->
+        <section id="collections" class="container my-5 py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+                <div>
+                    <span class="text-uppercase tracking-widest text-sage small font-weight-bold">Curated Stories</span>
+                    <h2 class="font-serif display-4 font-weight-bold mb-0">Seasonal Lookbook</h2>
+                </div>
+                <p class="text-muted small mb-0 mt-2 mt-md-0">Swipe through our studio's signature installations</p>
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide carousel-custom overflow-hidden shadow-sm" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Crimson Garden Roses">
+                        <div class="carousel-caption d-none d-md-block text-left">
+                            <span class="badge badge-light text-uppercase tracking-widest mb-2 px-2 py-1">01 / Signature</span>
+                            <h5 class="font-serif h2 mb-1">Heirloom Garden Roses</h5>
+                            <p class="font-weight-light mb-0">Velvety burgundy and blush petals arranged in stoneware vessels.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Morning Meadow Tulips">
+                        <div class="carousel-caption d-none d-md-block text-left">
+                            <span class="badge badge-light text-uppercase tracking-widest mb-2 px-2 py-1">02 / Fresh Cut</span>
+                            <h5 class="font-serif h2 mb-1">Morning Meadow Tulips</h5>
+                            <p class="font-weight-light mb-0">Crisp French tulips cut at dawn for effortless table centerpieces.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Intimate Weddings">
+                        <div class="carousel-caption d-none d-md-block text-left">
+                            <span class="badge badge-light text-uppercase tracking-widest mb-2 px-2 py-1">03 / Bespoke</span>
+                            <h5 class="font-serif h2 mb-1">Intimate Gatherings &amp; Weddings</h5>
+                            <p class="font-weight-light mb-0">Sculptural tablescapes and bridal bouquets tailored to your venue.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- FEATURED BOUQUETS GRID -->
+        <section id="shop" class="py-5 bg-sand">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-uppercase tracking-widest text-sage small font-weight-bold">Hand-Tied Daily</span>
+                    <h2 class="font-serif display-4 font-weight-bold">Signature Arrangements</h2>
+                </div>
+
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="petal-card">
+                            <div class="petal-img-box position-relative overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="The Bordeaux Wrap" class="w-100 h-100 petal-img">
+                                <button type="button" class="fav-toggle" aria-label="Save stem">
+                                    <span class="material-icons-outlined">favorite_border</span>
+                                </button>
+                                <button type="button" class="btn btn-add-stem" data-name="The Bordeaux Wrap">
+                                    + Add to Basket
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline px-1">
+                                <h3 class="font-serif h5 font-weight-bold mb-0">The Bordeaux Wrap</h3>
+                                <span class="text-terracotta font-weight-medium">$115</span>
+                            </div>
+                            <p class="text-muted small px-1 mb-0">Garden Roses &amp; Eucalyptus</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="petal-card">
+                            <div class="petal-img-box position-relative overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80" alt="Apricot Sunrise" class="w-100 h-100 petal-img">
+                                <button type="button" class="fav-toggle" aria-label="Save stem">
+                                    <span class="material-icons-outlined">favorite_border</span>
+                                </button>
+                                <button type="button" class="btn btn-add-stem" data-name="Apricot Sunrise">
+                                    + Add to Basket
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline px-1">
+                                <h3 class="font-serif h5 font-weight-bold mb-0">Apricot Sunrise</h3>
+                                <span class="text-terracotta font-weight-medium">$88</span>
+                            </div>
+                            <p class="text-muted small px-1 mb-0">Parrot Tulips &amp; Ranunculus</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="petal-card">
+                            <div class="petal-img-box position-relative overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=600&q=80" alt="Provence Peony" class="w-100 h-100 petal-img">
+                                <button type="button" class="fav-toggle" aria-label="Save stem">
+                                    <span class="material-icons-outlined">favorite_border</span>
+                                </button>
+                                <button type="button" class="btn btn-add-stem" data-name="Provence Peony">
+                                    + Add to Basket
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline px-1">
+                                <h3 class="font-serif h5 font-weight-bold mb-0">Provence Peony</h3>
+                                <span class="text-terracotta font-weight-medium">$135</span>
+                            </div>
+                            <p class="text-muted small px-1 mb-0">Sarah Bernhardt Peonies</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div class="petal-card">
+                            <div class="petal-img-box position-relative overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=600&q=80" alt="Alabaster Sculpt" class="w-100 h-100 petal-img">
+                                <button type="button" class="fav-toggle" aria-label="Save stem">
+                                    <span class="material-icons-outlined">favorite_border</span>
+                                </button>
+                                <button type="button" class="btn btn-add-stem" data-name="Alabaster Sculpt">
+                                    + Add to Basket
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline px-1">
+                                <h3 class="font-serif h5 font-weight-bold mb-0">Alabaster Sculpt</h3>
+                                <span class="text-terracotta font-weight-medium">$98</span>
+                            </div>
+                            <p class="text-muted small px-1 mb-0">Calla Lilies &amp; Ceramic Vase</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center mt-4">
+                    <a href="#shop" class="btn btn-outline-charcoal px-5 py-3 text-uppercase tracking-widest">
+                        Browse Full Catalog
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLORAL SUBSCRIPTION / NEWSLETTER BANNER -->
+        <section id="newsletter" class="newsletter-band text-white py-5">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <span class="text-uppercase tracking-widest small d-block mb-2 text-cream-70">Studio Notes</span>
+                        <h2 class="font-serif h1 font-weight-bold mb-2">Receive Seasonal Stem Alerts</h2>
+                        <p class="font-weight-light text-cream-80 mb-0">
+                            Enjoy 15% off your first bouquet and early access to limited harvest drops.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="studio-newsletter-form" class="form-row">
+                            <div class="col-12 col-sm-8 mb-2 mb-sm-0">
+                                <input type="email" class="form-control studio-input py-4" placeholder="Enter your email..." required>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <button type="submit" class="btn btn-cream btn-block h-100 py-3 text-uppercase tracking-widest font-weight-bold">
+                                    Join List
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  FOOTER -->
+    <footer id="contact" class="atelier-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <span class="font-serif h3 font-weight-bold text-terracotta d-block mb-3">ATELIER PETAL</span>
+                    <p class="text-muted small font-weight-light pr-lg-4 mb-4">
+                        Independent botanical design studio crafting expressive, sustainable floral arrangements for homes, events, and everyday rituals.
+                    </p>
+                    <p class="small text-charcoal mb-0"><strong>Studio Hours:</strong> Tue – Sun, 9:00 AM – 6:00 PM</p>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <h4 class="text-uppercase tracking-widest small font-weight-bold mb-3">Shop</h4>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#shop">Daily Bouquets</a></li>
+                        <li class="mb-2"><a href="#shop">Dried Botanicals</a></li>
+                        <li class="mb-2"><a href="#shop">Ceramic Vessels</a></li>
+                        <li class="mb-2"><a href="#newsletter">Subscriptions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3 mb-4">
+                    <h4 class="text-uppercase tracking-widest small font-weight-bold mb-3">Client Care</h4>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#">Courier Delivery</a></li>
+                        <li class="mb-2"><a href="#">Flower Care Guide</a></li>
+                        <li class="mb-2"><a href="#">Wedding Inquiries</a></li>
+                        <li class="mb-2"><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <h4 class="text-uppercase tracking-widest small font-weight-bold mb-3">Visit Us</h4>
+                    <p class="text-muted small mb-2">412 Botanical Row, Suite 2B</p>
+                    <p class="text-muted small mb-3">hello@atelierpetal.com</p>
+                    <div class="d-flex social-pills">
+                        <a href="#" class="mr-2">Instagram</a>
+                        <a href="#" class="mr-2">Pinterest</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+                <p class="mb-2 mb-md-0">&copy; 2026 Atelier Petal Studio. All rights reserved.</p>
+                <div>
+                    <a href="#" class="text-muted mr-3">Privacy</a>
+                    <a href="#" class="text-muted">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Subtle Floating Notification -->
+    <div id="petal-toast" class="petal-toast">Added to basket</div>
+
+    <!-- Bootstrap 4.6.2 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>

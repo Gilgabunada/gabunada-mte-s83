@@ -1,0 +1,285 @@
+/* =========================================
+   WARM BOTANICAL PALETTE & TYPOGRAPHY
+   ========================================= */
+:root {
+    --cream-bg: #faf7f2;
+    --sand-bg: #f3ede4;
+    --terracotta: #9c4a3b;
+    --terracotta-dark: #7d382b;
+    --sage: #5c6e58;
+    --charcoal: #262322;
+}
+
+body {
+    background-color: var(--cream-bg);
+    color: var(--charcoal);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.text-terracotta { color: var(--terracotta) !important; }
+.text-sage { color: var(--sage) !important; }
+.text-charcoal { color: var(--charcoal) !important; }
+.bg-sand { background-color: var(--sand-bg); }
+.text-cream-70 { color: rgba(250, 247, 242, 0.7); }
+.text-cream-80 { color: rgba(250, 247, 242, 0.85); }
+
+.tracking-widest { letter-spacing: 0.16em; }
+.leading-tight { line-height: 1.1; }
+.object-cover { object-fit: cover; }
+
+/* =========================================
+   ANNOUNCEMENT & NAVBAR
+   ========================================= */
+.announcement-bar {
+    background-color: var(--sage);
+    color: #ffffff;
+    font-size: 0.68rem;
+}
+
+.atelier-navbar {
+    background-color: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(38, 35, 34, 0.08);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    letter-spacing: 0.08em;
+}
+
+.nav-links-custom .nav-link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--charcoal) !important;
+    transition: color 0.25s ease;
+}
+
+.nav-links-custom .nav-link:hover,
+.nav-links-custom .nav-item.active .nav-link {
+    color: var(--terracotta) !important;
+}
+
+.badge-terracotta {
+    background-color: var(--terracotta);
+    color: #ffffff;
+    font-size: 0.65rem;
+}
+
+/* =========================================
+   SPLIT HERO & ARCHED IMAGE FRAME
+   ========================================= */
+.hero-arch-frame {
+    max-width: 480px;
+    aspect-ratio: 1 / 1; /* Makes the hero frame a true square */
+    border-radius: 12px; /* Replaces the arch; use 0px for sharp corners */
+    overflow: hidden;
+    border: 8px solid #ffffff;
+}
+
+.btn-terracotta {
+    background-color: var(--terracotta);
+    color: #ffffff;
+    border: 1px solid var(--terracotta);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-terracotta:hover {
+    background-color: var(--terracotta-dark);
+    color: #ffffff;
+}
+
+.btn-outline-charcoal {
+    background-color: transparent;
+    color: var(--charcoal);
+    border: 1px solid var(--charcoal);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-charcoal:hover {
+    background-color: var(--charcoal);
+    color: #ffffff;
+}
+
+/* =========================================
+   CAROUSEL
+   ========================================= */
+.carousel-custom {
+    border-radius: 16px;
+}
+
+#carouselExampleCaptions .carousel-item img {
+    height: 460px;
+    object-fit: cover;
+}
+
+#carouselExampleCaptions .carousel-caption {
+    background: linear-gradient(to top, rgba(38, 35, 34, 0.8), rgba(38, 35, 34, 0.2));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.5rem 3rem 3rem;
+}
+
+/* =========================================
+   PRODUCT CARDS (ARCHED TOPS & PILL BUTTON)
+   ========================================= */
+.petal-img-box {
+    aspect-ratio: 1 / 1; /* Makes the image container a true square */
+    border-radius: 8px;  /* Removes the arch; use 0px if you want sharp corners */
+    background-color: #e8e0d5;
+}
+
+.petal-img {
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.petal-card:hover .petal-img {
+    transform: scale(1.06);
+}
+
+.fav-toggle {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(250, 247, 242, 0.9);
+    color: var(--charcoal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.fav-toggle:hover {
+    transform: scale(1.08);
+}
+
+.fav-toggle.saved {
+    color: var(--terracotta);
+}
+
+.btn-add-stem {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    width: 82%;
+    background-color: rgba(250, 247, 242, 0.95);
+    color: var(--charcoal);
+    border-radius: 50px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    opacity: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+.petal-card:hover .btn-add-stem {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.btn-add-stem:hover {
+    background-color: var(--terracotta);
+    color: #ffffff;
+}
+
+/* =========================================
+   NEWSLETTER & FOOTER
+   ========================================= */
+.newsletter-band {
+    background-color: var(--terracotta);
+}
+
+.studio-input {
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50px;
+    color: #ffffff;
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.studio-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.studio-input:focus {
+    background-color: rgba(255, 255, 255, 0.22);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-cream {
+    background-color: var(--cream-bg);
+    color: var(--charcoal);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cream:hover {
+    background-color: #ffffff;
+    color: var(--terracotta);
+}
+
+.atelier-footer {
+    background-color: var(--cream-bg);
+}
+
+.footer-menu a,
+.social-pills a {
+    color: #6c6560;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-menu a:hover,
+.social-pills a:hover {
+    color: var(--terracotta);
+}
+
+/* Toast Notification */
+.petal-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: var(--charcoal);
+    color: var(--cream-bg);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transform: translateY(16px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1050;
+}
+
+.petal-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
